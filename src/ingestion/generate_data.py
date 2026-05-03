@@ -82,3 +82,20 @@ subscriptions.to_csv("data/raw/subscriptions.csv", index=False)
 payments.to_csv("data/raw/payments.csv", index=False)
 
 print("All Spotify + payments data generated!")
+
+users = pd.read_csv("/Users/bita/copilot_portfolio/data/raw/users.csv")
+artists = pd.read_csv("/Users/bita/copilot_portfolio/data/raw/artists.csv")
+tracks = pd.read_csv("/Users/bita/copilot_portfolio/data/raw/tracks.csv")
+listening_events = pd.read_csv("/Users/bita/copilot_portfolio/data/raw/listening_events.csv")
+subscriptions = pd.read_csv("/Users/bita/copilot_portfolio/data/raw/subscriptions.csv")
+payments = pd.read_csv("/Users/bita/copilot_portfolio/data/raw/payments.csv")
+
+print("users:", users.shape)
+print("artists:", artists.shape)
+print("tracks:", tracks.shape)
+print("listening_events:", listening_events.shape)
+print("subscriptions:", subscriptions.shape)
+print("payments:", payments.shape)
+
+users.head()
+
